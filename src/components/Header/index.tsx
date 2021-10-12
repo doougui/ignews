@@ -11,7 +11,7 @@ export function Header() {
         <Image src={logoImg} alt="ig.news" />
         <nav>
           <a href="./" className={styles.active}>Home</a>
-          <a href="./">Posts</a>
+          <a href="./posts">Posts</a>
         </nav>
 
         <SignInButton />
