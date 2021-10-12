@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import logoImg from '../../../public/images/logo.svg';
 import { SignInButton } from '../SignInButton';
+import Link from 'next/link';
 
 import styles from './styles.module.scss';
 
@@ -10,8 +11,12 @@ export function Header() {
       <div className={styles.headerContent}>
         <Image src={logoImg} alt="ig.news" />
         <nav>
-          <a href="./" className={styles.active}>Home</a>
-          <a href="./posts">Posts</a>
+          <Link href="/">
+            <a className={styles.active}>Home</a>
+          </Link>
+          <Link href="/posts">
+            <a>Posts</a>
+          </Link>
         </nav>
 
         <SignInButton />
